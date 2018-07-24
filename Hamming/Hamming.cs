@@ -14,9 +14,9 @@ namespace Hamming
                  if (original.Length != current.Length)
                    throw new ArgumentException("Hamming Distance can only be calculated over strings of equal length");
 
-                for (int i = 0; i < original.Length; i++)
+                for (int index = 0; index < original.Length; index++)
                 {
-                    if (original[i] != current[i])
+                    if (original[index] != current[index])
                         hammingDistance += 1;
                 }
             return hammingDistance;
